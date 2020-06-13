@@ -15,6 +15,8 @@ import { DishdetailComponent } from './dishdetail/dishdetail.component';
 import 'hammerjs';
 import { from } from 'rxjs';
 
+import { DishService } from './services/dish.service';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { from } from 'rxjs';
     MatButtonModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [
+    DishService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
